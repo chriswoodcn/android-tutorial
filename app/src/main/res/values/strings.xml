@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Imooc</string>
+    <string name="main_title">一个示例项目</string>
+    <string name="main_desc">示例项目包含多个页面，jetpack使用，composeUI使用。</string>
+    <string name="main_button_1">Button1</string>
+    <string name="main_button_2">Button2</string>
+    <string name="main_button_3">Button3</string>
+    <string name="launch_mode_title">activity启动模式</string>
+    <string name="launch_mode_back">返回</string>
+    <string name="launch_mode_alert">alert dialog</string>
+    <string name="launch_mode_pop1">弹窗1</string>
+    <string name="launch_mode_pop2">弹窗2</string>
+    <string name="launch_mode_pop3">弹窗3</string>
+    <string name="launch_mode_pop4">弹窗4</string>
+    <string name="download_btn_start">开始下载</string>
+    <string name="download_btn_doing">下载中</string>
+    <string name="download_text_1">点击进行下载</string>
+    <string name="download_text_2">下载中</string>
+</resources>
