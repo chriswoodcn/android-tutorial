@@ -68,6 +68,12 @@
             android:theme="@style/Theme.Imooc">
 
         </activity>
+        <activity
+            android:name=".legacy.ExternalStorageActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Imooc">
+
+        </activity>
     </application>
 
 </manifest>

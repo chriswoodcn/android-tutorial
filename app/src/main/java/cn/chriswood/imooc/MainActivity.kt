@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.View
 import cn.chriswood.imooc.legacy.CardViewActivity
 import cn.chriswood.imooc.legacy.DownloadActivity
+import cn.chriswood.imooc.legacy.ExternalStorageActivity
 import cn.chriswood.imooc.legacy.LaunchModeActivity
 import cn.chriswood.imooc.legacy.ListViewActivity
 import cn.chriswood.imooc.legacy.SharePreferenceActivity
@@ -34,6 +35,9 @@ class MainActivity : Activity() {
 
             v.id == R.id.button5 ->
                 startActivity(Intent(this, SharePreferenceActivity::class.java))
+
+            v.id == R.id.button6 ->
+                startActivity(Intent(this, ExternalStorageActivity::class.java))
         }
     }
 }
