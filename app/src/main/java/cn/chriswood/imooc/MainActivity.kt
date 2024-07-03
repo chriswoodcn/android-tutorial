@@ -9,6 +9,7 @@ import cn.chriswood.imooc.legacy.CardViewActivity
 import cn.chriswood.imooc.legacy.DownloadActivity
 import cn.chriswood.imooc.legacy.LaunchModeActivity
 import cn.chriswood.imooc.legacy.ListViewActivity
+import cn.chriswood.imooc.legacy.SharePreferenceActivity
 
 class MainActivity : Activity() {
     @SuppressLint("ResourceType")
@@ -30,6 +31,9 @@ class MainActivity : Activity() {
 
             v.id == R.id.button4 ->
                 startActivity(Intent(this, CardViewActivity::class.java))
+
+            v.id == R.id.button5 ->
+                startActivity(Intent(this, SharePreferenceActivity::class.java))
         }
     }
 }
