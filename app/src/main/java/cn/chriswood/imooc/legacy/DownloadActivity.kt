@@ -1,4 +1,4 @@
-package cn.chriswood.imooc
+package cn.chriswood.imooc.legacy
 
 import android.app.Activity
 import android.os.AsyncTask
@@ -10,6 +10,7 @@ import android.view.View.OnClickListener
 import android.widget.Button
 import android.widget.ProgressBar
 import android.widget.TextView
+import cn.chriswood.imooc.R
 import java.io.File
 
 class DownloadActivity : Activity(), OnClickListener {

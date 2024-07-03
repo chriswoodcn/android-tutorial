@@ -1,4 +1,4 @@
-package cn.chriswood.imooc
+package cn.chriswood.imooc.legacy
 
 import android.app.Activity
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.widget.BaseAdapter
 import android.widget.ImageView
 import android.widget.ListView
 import android.widget.TextView
+import cn.chriswood.imooc.R
 
 class ListViewActivity : Activity() {
     private val dataList: List<String>

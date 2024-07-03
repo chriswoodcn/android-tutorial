@@ -1,6 +1,5 @@
-package cn.chriswood.imooc
+package cn.chriswood.imooc.legacy
 
-import android.app.Activity
 import android.app.AlertDialog
 import android.os.Bundle
 import android.view.Menu
@@ -10,6 +9,7 @@ import android.widget.Button
 import android.widget.PopupWindow
 import android.widget.Toast
 import androidx.fragment.app.FragmentActivity
+import cn.chriswood.imooc.R
 
 
 class LaunchModeActivity : FragmentActivity() {

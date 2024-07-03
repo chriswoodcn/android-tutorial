@@ -25,6 +25,11 @@
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.Imooc">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
         </activity>
         <!-- android:launchMode="standard" 标准栈，先进后出-->
@@ -33,27 +38,35 @@
         <!-- android:launchMode="singleInstance" 单独一个栈-->
         <!-- android:launchMode="singleInstancePerTask" -->
         <activity
-            android:name=".LaunchModeActivity"
+            android:name=".legacy.LaunchModeActivity"
             android:exported="true"
             android:label="@string/launch_mode_title"
             android:theme="@style/Theme.withBar">
 
         </activity>
         <activity
-            android:name=".DownloadActivity"
+            android:name=".legacy.DownloadActivity"
             android:exported="true"
             android:theme="@style/Theme.Imooc">
 
         </activity>
         <activity
-            android:name=".ListViewActivity"
+            android:name=".legacy.ListViewActivity"
             android:exported="true"
             android:theme="@style/Theme.Imooc">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+        <activity
+            android:name=".legacy.CardViewActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Imooc">
+
+        </activity>
+        <activity
+            android:name=".legacy.SharePreferenceActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Imooc">
+
         </activity>
     </application>
 

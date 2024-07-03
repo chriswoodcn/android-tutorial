@@ -1,10 +1,18 @@
 <resources>
     <string name="app_name">Imooc</string>
     <string name="main_title">一个示例项目</string>
-    <string name="main_desc">示例项目包含多个页面，jetpack使用，composeUI使用。</string>
-    <string name="main_button_1">Button1</string>
-    <string name="main_button_2">Button2</string>
-    <string name="main_button_3">Button3</string>
+    <string name="main_desc">示例项目包含多个页面，原始xmlUI，jetpack使用，composeUI使用。</string>
+    <string name="main_button_1">LaunchMode演示</string>
+    <string name="main_button_2">Handler&amp;AsyncTask演示</string>
+    <string name="main_button_3">ListView演示</string>
+    <string name="main_button_4">CardView演示</string>
+    <string name="main_button_5">5</string>
+    <string name="main_button_6">6</string>
+    <string name="main_button_7">7</string>
+    <string name="main_button_8">8</string>
+    <string name="main_button_9">9</string>
+    <string name="main_button_10">10</string>
+    <string name="main_button_11">11</string>
     <string name="launch_mode_title">activity启动模式</string>
     <string name="launch_mode_back">返回</string>
     <string name="launch_mode_alert">alert dialog</string>
