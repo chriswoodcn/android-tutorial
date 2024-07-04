@@ -46,3 +46,7 @@
 rootProject.name = "android-tutorial"
 include(":app")
 
+logger.log(LogLevel.INFO, rootProject.path)
+logger.log(LogLevel.INFO, rootProject.projectDir.absolutePath)
+logger.log(LogLevel.INFO, rootProject.name)
+

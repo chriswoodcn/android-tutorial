@@ -74,6 +74,12 @@
             android:theme="@style/Theme.Imooc">
 
         </activity>
+        <activity
+            android:name=".legacy.SqliteActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Imooc">
+
+        </activity>
     </application>
 
 </manifest>

@@ -11,6 +11,7 @@ import cn.chriswood.imooc.legacy.ExternalStorageActivity
 import cn.chriswood.imooc.legacy.LaunchModeActivity
 import cn.chriswood.imooc.legacy.ListViewActivity
 import cn.chriswood.imooc.legacy.SharePreferenceActivity
+import cn.chriswood.imooc.legacy.SqliteActivity
 
 class MainActivity : Activity() {
     @SuppressLint("ResourceType")
@@ -38,6 +39,8 @@ class MainActivity : Activity() {
 
             v.id == R.id.button6 ->
                 startActivity(Intent(this, ExternalStorageActivity::class.java))
-        }
+
+            v.id == R.id.button7 ->
+                startActivity(Intent(this, SqliteActivity::class.java))}
     }
 }

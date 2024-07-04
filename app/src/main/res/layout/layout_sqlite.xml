@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/sqlite_input_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="姓名" />
+
+        <EditText
+            android:id="@+id/sqlite_input_age"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="年龄"
+            android:inputType="numberSigned" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="性别" />
+
+            <RadioButton
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:checked="true"
+                android:text="男" />
+
+            <RadioButton
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="女" />
+
+            <RadioButton
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:text="保密" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/sqlite_input_id"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="编号" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/sqlite_btn_1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/sqlite_btn_2"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/sqlite_btn_3"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/sqlite_btn_4"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="4" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

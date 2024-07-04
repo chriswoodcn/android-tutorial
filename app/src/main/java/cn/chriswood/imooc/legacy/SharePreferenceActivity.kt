@@ -51,7 +51,7 @@ class SharePreferenceActivity : Activity(), OnClickListener {
                 val edit = sp.edit()
                 edit.putString("account", account)
                 edit.putString("password", password)
-                edit.commit()
+                edit.apply()
                 Toast.makeText(
                     this, "save success!",
                     Toast.LENGTH_SHORT
