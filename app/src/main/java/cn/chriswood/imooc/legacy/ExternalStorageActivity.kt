@@ -40,6 +40,7 @@ class ExternalStorageActivity : Activity(), OnClickListener {
             return
         }
         val text = textEdit.text.toString()
+        Log.i(TAG, "text: $text")
 
         //真实外部存储的目录
         val path = Environment
@@ -71,7 +72,7 @@ class ExternalStorageActivity : Activity(), OnClickListener {
                     if (!file.exists()) {
                         file.createNewFile()
                     }
-                    file.outputStream().writer().buffered(1024).write(text)
+                    file.writer().buffered(1024).write(text)
                     Toast.makeText(this, "write success", Toast.LENGTH_SHORT).show()
                 } catch (e: Exception) {
                     Log.i(TAG, e.message.toString())
@@ -94,9 +95,9 @@ class ExternalStorageActivity : Activity(), OnClickListener {
                 try {
                     val file = File(path)
                     if (file.exists()) {
-                        val readText = file.inputStream().reader().buffered(1024).readText()
+                        val readText = file.reader().buffered(1024).readLines()
                         Log.i(TAG, "readText: $readText")
-                        textEdit.setText(readText)
+                        textEdit.setText(readText.joinToString())
                     } else {
                         textEdit.setText("")
                     }
