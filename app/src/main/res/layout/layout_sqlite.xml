@@ -1,96 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/sqlite_input_name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="姓名" />
+
+    <EditText
+        android:id="@+id/sqlite_input_age"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="年龄"
+        android:inputType="numberSigned" />
+
+    <RadioGroup
+        android:id="@+id/sqlite_input_gender"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="性别" />
+
+        <RadioButton
+            android:id="@+id/gender_1"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:checked="true"
+            android:text="男" />
+
+        <RadioButton
+            android:id="@+id/gender_2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="女" />
+
+        <RadioButton
+            android:id="@+id/gender_3"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="保密" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/sqlite_input_id"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="编号" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_marginTop="20dp">
 
-        <EditText
-            android:id="@+id/sqlite_input_name"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/sqlite_btn_1"
+            android:layout_width="0dp"
             android:layout_height="60dp"
-            android:hint="姓名" />
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="插入"
+            tools:ignore="UsingOnClickInXml" />
 
-        <EditText
-            android:id="@+id/sqlite_input_age"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/sqlite_btn_2"
+            android:layout_width="0dp"
             android:layout_height="60dp"
-            android:hint="年龄"
-            android:inputType="numberSigned" />
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="查询"
+            tools:ignore="UsingOnClickInXml" />
 
-        <RadioGroup
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/sqlite_btn_3"
+            android:layout_width="0dp"
             android:layout_height="60dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="删除"
+            tools:ignore="UsingOnClickInXml" />
 
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="60dp"
-                android:text="性别" />
-
-            <RadioButton
-                android:layout_width="100dp"
-                android:layout_height="60dp"
-                android:checked="true"
-                android:text="男" />
-
-            <RadioButton
-                android:layout_width="100dp"
-                android:layout_height="60dp"
-                android:text="女" />
-
-            <RadioButton
-                android:layout_width="100dp"
-                android:layout_height="60dp"
-                android:text="保密" />
-        </RadioGroup>
-
-        <EditText
-            android:id="@+id/sqlite_input_id"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/sqlite_btn_4"
+            android:layout_width="0dp"
             android:layout_height="60dp"
-            android:hint="编号" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="20dp">
-
-            <Button
-                android:id="@+id/sqlite_btn_1"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:text="1" />
-
-            <Button
-                android:id="@+id/sqlite_btn_2"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:text="2" />
-
-            <Button
-                android:id="@+id/sqlite_btn_3"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:text="3" />
-
-            <Button
-                android:id="@+id/sqlite_btn_4"
-                android:layout_width="0dp"
-                android:layout_height="60dp"
-                android:layout_weight="1"
-                android:text="4" />
-        </LinearLayout>
-
-
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="修改"
+            tools:ignore="UsingOnClickInXml" />
     </LinearLayout>
 
+    <ListView
+        android:id="@+id/sqlite_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-</ScrollView>
+</LinearLayout>
