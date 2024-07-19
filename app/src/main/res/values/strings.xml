@@ -24,4 +24,6 @@
     <string name="download_btn_doing">下载中</string>
     <string name="download_text_1">点击进行下载</string>
     <string name="download_text_2">下载中</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_product_list">ProductListActivity</string>
 </resources>
