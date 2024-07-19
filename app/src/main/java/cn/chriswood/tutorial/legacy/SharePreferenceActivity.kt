@@ -1,4 +1,4 @@
-package cn.chriswood.imooc.legacy
+package cn.chriswood.tutorial.legacy
 
 import android.app.Activity
 import android.os.Bundle
@@ -8,7 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
-import cn.chriswood.imooc.R
+import cn.chriswood.tutorial.R
 
 class SharePreferenceActivity : Activity(), OnClickListener {
     private lateinit var accountEdit: EditText

@@ -1,4 +1,4 @@
-package cn.chriswood.imooc
+package cn.chriswood.tutorial
 
 import org.junit.Test
 

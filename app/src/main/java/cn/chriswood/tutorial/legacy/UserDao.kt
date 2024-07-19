@@ -1,4 +1,4 @@
-package cn.chriswood.imooc.legacy
+package cn.chriswood.tutorial.legacy
 
 import android.content.Context
 import android.database.Cursor

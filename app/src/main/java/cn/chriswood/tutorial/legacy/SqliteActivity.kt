@@ -1,28 +1,17 @@
-package cn.chriswood.imooc.legacy
+package cn.chriswood.tutorial.legacy
 
 import android.app.Activity
-import android.content.Context
-import android.database.Cursor
-import android.database.sqlite.SQLiteDatabase
-import android.database.sqlite.SQLiteOpenHelper
 import android.os.Bundle
-import android.os.Environment
-import android.util.Log
 import android.view.View
 import android.view.View.OnClickListener
-import android.view.ViewGroup
-import android.widget.BaseAdapter
 import android.widget.Button
 import android.widget.CursorAdapter
 import android.widget.EditText
-import android.widget.ListAdapter
 import android.widget.ListView
 import android.widget.RadioGroup
 import android.widget.SimpleCursorAdapter
-import android.widget.TextView
 import android.widget.Toast
-import cn.chriswood.imooc.R
-import java.io.File
+import cn.chriswood.tutorial.R
 
 class SqliteActivity : Activity(), OnClickListener, RadioGroup.OnCheckedChangeListener {
     private val TAG = "SqliteActivity"

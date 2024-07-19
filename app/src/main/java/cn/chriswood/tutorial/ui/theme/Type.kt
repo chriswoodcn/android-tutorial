@@ -1,4 +1,4 @@
-package cn.chriswood.imooc.ui.theme
+package cn.chriswood.tutorial.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

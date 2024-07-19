@@ -19,12 +19,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Imooc"
+        android:theme="@style/Theme.Tutorial"
         tools:targetApi="31">
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.Imooc">
+            android:theme="@style/Theme.Tutorial">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -47,37 +47,37 @@
         <activity
             android:name=".legacy.DownloadActivity"
             android:exported="true"
-            android:theme="@style/Theme.Imooc">
+            android:theme="@style/Theme.Tutorial">
 
         </activity>
         <activity
             android:name=".legacy.ListViewActivity"
             android:exported="true"
-            android:theme="@style/Theme.Imooc">
+            android:theme="@style/Theme.Tutorial">
 
         </activity>
         <activity
             android:name=".legacy.CardViewActivity"
             android:exported="true"
-            android:theme="@style/Theme.Imooc">
+            android:theme="@style/Theme.Tutorial">
 
         </activity>
         <activity
             android:name=".legacy.SharePreferenceActivity"
             android:exported="true"
-            android:theme="@style/Theme.Imooc">
+            android:theme="@style/Theme.Tutorial">
 
         </activity>
         <activity
             android:name=".legacy.ExternalStorageActivity"
             android:exported="true"
-            android:theme="@style/Theme.Imooc">
+            android:theme="@style/Theme.Tutorial">
 
         </activity>
         <activity
             android:name=".legacy.SqliteActivity"
             android:exported="true"
-            android:theme="@style/Theme.Imooc">
+            android:theme="@style/Theme.Tutorial">
 
         </activity>
     </application>

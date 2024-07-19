@@ -1,4 +1,4 @@
-package cn.chriswood.imooc.legacy
+package cn.chriswood.tutorial.legacy
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -9,7 +9,7 @@ import android.widget.Button
 import android.widget.PopupWindow
 import android.widget.Toast
 import androidx.fragment.app.FragmentActivity
-import cn.chriswood.imooc.R
+import cn.chriswood.tutorial.R
 
 
 class LaunchModeActivity : FragmentActivity() {

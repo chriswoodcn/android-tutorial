@@ -1,9 +1,9 @@
-package cn.chriswood.imooc.legacy
+package cn.chriswood.tutorial.legacy
 
 import android.app.Activity
 import android.os.Bundle
 import android.widget.TextView
-import cn.chriswood.imooc.R
+import cn.chriswood.tutorial.R
 
 class CardViewActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {

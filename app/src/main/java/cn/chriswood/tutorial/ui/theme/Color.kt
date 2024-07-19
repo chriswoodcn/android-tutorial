@@ -1,4 +1,4 @@
-package cn.chriswood.imooc.ui.theme
+package cn.chriswood.tutorial.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

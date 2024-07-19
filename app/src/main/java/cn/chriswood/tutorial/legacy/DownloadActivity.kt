@@ -1,5 +1,6 @@
-package cn.chriswood.imooc.legacy
+package cn.chriswood.tutorial.legacy
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.os.AsyncTask
 import android.os.Bundle
@@ -10,7 +11,7 @@ import android.view.View.OnClickListener
 import android.widget.Button
 import android.widget.ProgressBar
 import android.widget.TextView
-import cn.chriswood.imooc.R
+import cn.chriswood.tutorial.R
 import java.io.File
 
 class DownloadActivity : Activity(), OnClickListener {

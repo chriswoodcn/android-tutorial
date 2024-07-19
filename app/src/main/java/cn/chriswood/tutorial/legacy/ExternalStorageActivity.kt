@@ -1,4 +1,4 @@
-package cn.chriswood.imooc.legacy
+package cn.chriswood.tutorial.legacy
 
 import android.Manifest
 import android.app.Activity
@@ -13,7 +13,9 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import cn.chriswood.imooc.R
+import cn.chriswood.tutorial.R
+import java.io.BufferedReader
+import java.io.BufferedWriter
 import java.io.File
 
 class ExternalStorageActivity : Activity(), OnClickListener {
@@ -46,6 +48,7 @@ class ExternalStorageActivity : Activity(), OnClickListener {
         val path = Environment
             .getExternalStorageDirectory()
             .absolutePath + File.separator + "test_ex_storage.txt"
+        Log.i(TAG, path)
         when {
             v?.id == R.id.ex_storage_write -> {
                 if (text.isEmpty()) {
@@ -72,7 +75,7 @@ class ExternalStorageActivity : Activity(), OnClickListener {
                     if (!file.exists()) {
                         file.createNewFile()
                     }
-                    file.writer().buffered(1024).write(text)
+                    file.outputStream().bufferedWriter().use { w -> w.write(text) }
                     Toast.makeText(this, "write success", Toast.LENGTH_SHORT).show()
                 } catch (e: Exception) {
                     Log.i(TAG, e.message.toString())
@@ -95,9 +98,10 @@ class ExternalStorageActivity : Activity(), OnClickListener {
                 try {
                     val file = File(path)
                     if (file.exists()) {
-                        val readText = file.reader().buffered(1024).readLines()
+                        val readText =
+                            file.inputStream().bufferedReader().use { r -> r.readText() }
                         Log.i(TAG, "readText: $readText")
-                        textEdit.setText(readText.joinToString())
+                        textEdit.setText(readText)
                     } else {
                         textEdit.setText("")
                     }

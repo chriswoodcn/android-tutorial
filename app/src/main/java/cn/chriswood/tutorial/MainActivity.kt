@@ -1,17 +1,17 @@
-package cn.chriswood.imooc
+package cn.chriswood.tutorial
 
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import cn.chriswood.imooc.legacy.CardViewActivity
-import cn.chriswood.imooc.legacy.DownloadActivity
-import cn.chriswood.imooc.legacy.ExternalStorageActivity
-import cn.chriswood.imooc.legacy.LaunchModeActivity
-import cn.chriswood.imooc.legacy.ListViewActivity
-import cn.chriswood.imooc.legacy.SharePreferenceActivity
-import cn.chriswood.imooc.legacy.SqliteActivity
+import cn.chriswood.tutorial.legacy.CardViewActivity
+import cn.chriswood.tutorial.legacy.DownloadActivity
+import cn.chriswood.tutorial.legacy.ExternalStorageActivity
+import cn.chriswood.tutorial.legacy.LaunchModeActivity
+import cn.chriswood.tutorial.legacy.ListViewActivity
+import cn.chriswood.tutorial.legacy.SharePreferenceActivity
+import cn.chriswood.tutorial.legacy.SqliteActivity
 
 class MainActivity : Activity() {
     @SuppressLint("ResourceType")

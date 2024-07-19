@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Imooc" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.Tutorial" parent="android:Theme.Material.Light.NoActionBar" />
     <style name="Theme.withBar" parent="android:Theme.Material.Light" />
 </resources>

@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "cn.chriswood.imooc"
+    namespace = "cn.chriswood.tutorial"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "cn.chriswood.imooc"
+        applicationId = "cn.chriswood.tutorial"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
@@ -50,7 +50,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
